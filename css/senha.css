@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+
+.box1 {
+    width: 0;
+    height: 0;
+    border-left: 400px solid transparent; /* Ajustado o valor da borda esquerda */
+    border-top: 400px solid #8FDFD4; /* Alterado de border-bottom para border-top */
+    transform: rotate(270deg); /* Ajustado o ângulo de rotação */
+}
+
+.img-logo img {
+    width: 150px;
+    position: absolute;
+    top: 30px;
+    left: 50px; 
+    z-index: 1; 
+}
+
+.decoration1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.linha1 {
+    padding-top: 20px;
+}

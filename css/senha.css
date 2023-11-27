@@ -2,8 +2,7 @@ body {
     margin: 0;
 }
 
-
-.box1 {
+.triangulo1 {
     width: 0;
     height: 0;
     border-left: 400px solid transparent; /* Ajustado o valor da borda esquerda */
@@ -26,4 +25,90 @@ body {
 
 .linha1 {
     padding-top: 20px;
+}
+
+.principal {
+    justify-content: center;
+    padding: 30px;
+    width: 400px;
+    height: 290px;
+    border-radius: 16px;
+    border: 1px solid #C8BED7;
+    background: rgba(249, 249, 249, 0.53);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.171) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    color: #3B3636;
+}
+
+input {
+    margin-top: 5px;
+    border-radius: 10px;
+    width: 340px;
+    height: 20px;
+    padding: 10px;
+    background-color: #FCFCFC;
+    outline: 0;
+    border: 1px solid #F0E4E4;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    top: 60px;
+    left: 530px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.p-box1 {
+    color: #72A9A1;
+    font-size: 18px;
+    font-family: 'Noto Sans Pahawh Hmong', sans-serif;
+    text-align: center;
+}
+
+.p-box2 {
+    margin-top: 20px;
+    font-size: 13px;
+    font-family: 'Noto Sans Pahawh Hmong', sans-serif;
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-voltar {
+    margin-right: 90px;
+    border: none;
+    background: none;
+    color: #0C7886;;
+}
+
+.btn-enviar {
+    border-radius: 10px;
+    background-color: #8EC0B9;
+    color: #ffff;
+    border: #5AD2E2;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.13);
+}
+
+label {
+    font-size: 17px;
 }

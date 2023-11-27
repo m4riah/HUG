@@ -1,20 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.background-white {
+    flex: 1;
+    background-color: white;
+}
+
+.background-image {
+    flex: 1;
+    background-image: url('https://i.ibb.co/JBXWp8p/wave.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.div-h1 {
+    width: 300px;
+}
+
+h1 {
+color: #8FDFD4;
+font-size: 35px;
+font-family: 'Rubik', sans-serif;
+margin-bottom: 30px;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.055);
+}
+
 .login {
-    top: 30px;
+    top: 100px;
     right: 30px;
+    left: 190px;
+    position: relative;
 }
 
 .input-icon p {
     margin: 0;
-    padding-left: 8px; 
-    color: black; 
+    color: rgb(63, 61, 61); 
     font-size: 17px; 
+    margin-bottom: 5px;
+    font-family: 'Noto Sans Pahawh Hmong', sans-serif;
 }
 
 .input-icon input {
     height: 25px; 
     padding: 10px; 
     border-radius: 15px;
-    border: none;
+    border: 1px solid #dfdfdf;
     font-size: 13px;
     text-indent: 20px;
     margin-bottom: 16px;
@@ -29,23 +67,61 @@ input::placeholder {
 }
 
 button {
-    background-color: #F8F8F8;
-    width: 100px;
+    background-color: #A3E0D8;
+    width: 120px;
     height: 38px;
     border-radius: 9px;
     margin-left: 190px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #72A9A1;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+    box-shadow: inset 7px 5px 15px #8EC0B9;
 }
 
 .links {
 margin-left: 10px;
+font-size: 15px;
+}
+
+.links p {
+    font-family: 'Noto Sans Pahawh Hmong', sans-serif;
 }
 
 .senha {
-    color: #72A9A1;
+    color: #96cec5;
     text-decoration: none;
+    font-family: 'Noto Sans Pahawh Hmong', sans-serif;
 }
 .cad {
     margin-left: 5px;
-    color: #72A9A1;
+    color: #96cec5;
     text-decoration: none;
+    font-family: 'Noto Sans Pahawh Hmong', sans-serif;
+}
+
+.logo {
+    float: right;
+}
+
+.logo img {
+    width: 330px;
+    margin-top: 260px;
+    margin-right: 80px;
+}
+
+.logo-p {
+width: 320px;
+}
+
+.logo-p p {
+font-size: 18px;
+color: #1A816E;
+text-align: center;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: 'Noto Sans JP', sans-serif;
 }

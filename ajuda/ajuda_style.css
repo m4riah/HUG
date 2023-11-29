@@ -1,16 +1,10 @@
-body, h1, h2, h3, p, div {
-    margin: 0;
-    padding: 0;
-}
-
 .wireframe {
+    width: 1440px;
+    height: 1024px;
     background-color: #FAFAFA;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    height: 130vh;
-    display: flex;
-    
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .menu-fixo {
@@ -31,7 +25,7 @@ body, h1, h2, h3, p, div {
     font-size: 10px;
     width: 159px;
     text-align: center;
-    font-family: 'inter';
+    font-family: Arial, Helvetica, sans-serif;
     color: #1A816E;
     padding-top: 10px;
     padding-left: 80px;
@@ -71,25 +65,22 @@ body, h1, h2, h3, p, div {
 
 .text-menu {
     color: #FFFFFF;
-    font-family: 'arimo';
 }
 
 .op-menu:hover {
-    background-color: #36C6C6;
-    background-image: url('img/iconmonstr-building-4-240.png');
+    background-color: RED;
+    /*background-image: url('img/iconmonstr-building-4-240.png');*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .op-menu:hover .text-menu {
-    color: #FFFFFF;
+    color: pink;
 }
 
 .op-menu.clicked {
     background-color: #1A816E;
-    transition: background-color 0.5s ease; /* Adjust the duration as needed */
-    
 }
 
 .op-menu.clicked .text-menu {

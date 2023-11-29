@@ -1,0 +1,230 @@
+body,
+h1,
+h2,
+h3,
+p,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.wireframe {
+    background-color: #FAFAFA;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 130vh;
+    display: flex;
+
+}
+
+.menu-fixo {
+    width: 330px;
+    height: 130vh;
+    background-color: #8fdfd4;
+    border-top-right-radius: 15px;
+}
+
+.logo1 {
+    width: 177px;
+    height: 52px;
+    padding-top: 50px;
+    padding-left: 80px;
+}
+
+.frase-logo {
+    font-size: 10px;
+    width: 159px;
+    text-align: center;
+    font-family: 'inter';
+    color: #1A816E;
+    padding-top: 10px;
+    padding-left: 80px;
+}
+
+.linha {
+    background-color: #8EC0B9;
+    margin-top: 50px;
+}
+
+
+
+.op-menu-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.op-menu {
+    width: 230px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.icon-menu {
+    margin-right: 10px;
+}
+
+.icon-menu img {
+    max-width: 100%;
+}
+
+.text-menu {
+    color: #FFFFFF;
+    font-family: 'arimo';
+}
+
+.op-menu:hover {
+    background-color: #36C6C6;
+    background-image: url('img/iconmonstr-building-4-240.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.op-menu:hover .text-menu {
+    color: #FFFFFF;
+}
+
+.op-menu.clicked {
+    background-color: #1A816E;
+    transition: background-color 0.5s ease;
+    /* Adjust the duration as needed */
+
+}
+
+.op-menu.clicked .text-menu {
+    color: #FFFFFF;
+}
+
+.container-centro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #b9f3e8;
+}
+
+.container-topo2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    background-color: #FFFFFF;
+}
+
+.container-cabecalho {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.descricoes {
+    width: 450px;
+    height: 500px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.descricoes p {
+    margin-top: 30px;
+}
+
+.foto-perfil {
+    width: 70px;
+    height: 70px;
+    margin-left: auto;
+}
+
+.container-cabecalho h1 {
+    color: #329F92;
+    font-size: 44px;
+    font-family: 'arimo';
+}
+
+.container-cabecalho p {
+    font-family: 'inter';
+    text-align: justify;
+}
+
+.informacoes {
+    width: 400px;
+    height: 260px;
+    background-color: #F5F5F5;
+    margin-top: 50px;
+    margin-right: 20px;
+    border: 1px solid #0C7886;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.consultas {
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-family: 'inter';
+
+}
+
+.alterar-sessao {
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+    font-family: 'inter';
+    background-color: #33877D;
+    border: 1px solid #5AD2E2;
+    border-radius: 8px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.alterar-sessao img {
+    margin-left: 15px;
+}
+
+
+.opcoes {
+    width: 100%;
+    height: 500px;
+    background-color: #5DA19F;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartao {
+    width: 180px;
+    height: 170px;
+    background-color: #C5E5E1;
+    border: 1px solid #0C7886;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+
+.cartao p {
+    white-space: pre-line;
+    color: #07655A;
+    font-weight: 600;
+    font-family: 'arimo';
+}

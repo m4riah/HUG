@@ -68,19 +68,21 @@
 }
 
 .op-menu:hover {
-    background-color: RED;
-    /*background-image: url('img/iconmonstr-building-4-240.png');*/
+    background-color: #36C6C6;
+    background-image: url('img/iconmonstr-building-4-240.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .op-menu:hover .text-menu {
-    color: pink;
+    color: #FFFFFF;
 }
 
 .op-menu.clicked {
     background-color: #1A816E;
+    transition: background-color 0.5s ease; /* Adjust the duration as needed */
+    
 }
 
 .op-menu.clicked .text-menu {

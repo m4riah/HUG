@@ -1,0 +1,284 @@
+.triangulo {
+    width: 45vw;
+    height: 25vh;
+    clip-path: polygon(100% 0%, 50% 0%, 100% 100%);
+    background-color: #8FDFD4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("/images/HUG_5.png");
+    background-repeat: no-repeat;
+    background-position: right bottom 80px;
+    /* Ajuste os valores conforme necessário */
+  }
+  
+  .voltar {
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90px;
+    /* ajuste a largura conforme necessário */
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+  
+  .voltar img {
+    max-width: 50%;
+    /* ajuste conforme necessário */
+  }
+  
+  .container-topo {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .container-2 {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+  }
+  
+  .container-2 h2 {
+    font-size: 35px;
+    font-weight: lighter;
+  }
+  
+  .container-2 h4 {
+    color: #23807E;
+  }
+  
+  
+  .foto-psi {
+    width: 200px;
+    height: 200px;
+    background-image: url("/images/foto-psi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    /* Torna a imagem circular */
+    border: 1px solid #8FDFD4;
+    /* Adiciona uma borda */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  .container-2-1 {
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Adiciona a propriedade para centralizar verticalmente */
+  
+  }
+  
+  .botoes1 {
+    width: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .rede-social {
+    background-color: #EDEDED;
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #999999;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .container-1 {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+    background-color: #FAFAFA;
+    border: #E3E3E3 1px solid;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-right: 30px;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 130vh;
+    background: linear-gradient(to bottom, #FAFAFA 50%, #5DA19F 50%);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .horizontal-dates {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .horizontal-dates div {
+    margin-right: 29px;
+    margin-left: 25px;
+  }
+  
+  .date-carousel {
+    width: 450px;
+  }
+  
+  .botao-carrossel {
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  
+  
+  table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  
+  }
+  
+  .agendar {
+    font-size: 27px;
+    align-self: flex-start;
+  }
+  
+  td {
+    position: relative;
+    background-color: #23807E;
+    border: 15px solid #fff;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  td a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  th {
+    color: #716D6D;
+  }
+  
+  td:hover {
+    background-color: #f39c12;
+    color: #fff;
+  }
+  
+  th {
+    color: #716D6D;
+  }
+  
+  td:hover {
+    background-color: #f39c12;
+    color: #fff;
+  }
+  
+  
+  td,
+  th {
+    border: solid 5px #FAFAFA;
+    padding: 8px;
+    /* Adiciona algum espaçamento interno para melhorar a aparência */
+  }
+  
+  .date-carousel {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container-3 {
+    width: 520px;
+    height: 110px;
+    background-color: #DAECEA;
+    margin-left: 50px;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #6D6161;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: -40px;
+  }
+  
+  .container-3 h2 {
+    color: #848181;
+    font-weight: bold;
+  }
+  
+  .container-3 p {
+    color: #4A4A4A;
+    font-weight: bold;
+  }
+  
+  .paragrafo {
+    position: absolute;
+    top: 55%;
+    left: 0;
+    width: 400px;
+    padding-left: 50px;
+  }
+  
+  .paragrafo p {
+    font-size: 16px;
+    /* Ajuste o tamanho da fonte conforme necessário */
+    color: #E7FEFB;
+    /* Ajuste a cor do texto conforme necessário */
+    width: 700px;
+    text-align: justify;
+  }
+  
+  .p-contato {
+    margin-left: 50px;
+    color: #2A413E;
+    font-weight: medium;
+  }
+
+  .botao-alterar{
+    width: 200px;
+    background-color: #8FDFD4;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: auto;
+    margin-right: 100px;
+    margin-bottom: 500px;
+  }

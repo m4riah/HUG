@@ -222,6 +222,10 @@ div {
     margin: 50px;
 }
 
+.cartao a {
+    text-decoration: none;
+}
+
 .cartao p {
     white-space: pre-line;
     color: #07655A;

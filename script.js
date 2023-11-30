@@ -17,115 +17,144 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-/////// PSICOLOGO /////////
+// /////// PSICOLOGO /////////
 
-const totalDates = 5;
-let currentStartIndex = 0;
-const currentDateElement = document.getElementById("currentDate");
-const dateRowElement = document.getElementById("dateRow");
-const dayRowElement = document.getElementById("dayRow");
 
-function updateDates() {
-  const displayedDates = getDisplayedDates();
-  dateRowElement.innerHTML = displayedDates.map(date => `<div>${date}</div>`).join("");
-}
+  const totalDates = 5;
+  let currentStartIndex = 0;
+  const dateRowElement = document.getElementById("dateRow");
+  const dayRowElement = document.getElementById("dayRow");
 
-function updateDaysOfWeek() {
-  const today = new Date();
-  const daysOfWeek = [];
-
-  for (let i = 0; i < 5; i++) {
-    const date = new Date(today.getFullYear(), today.getMonth(), today.getDate() + i);
-    const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'short' }).toUpperCase();
-    daysOfWeek.push(dayOfWeek);
+  function updateDates() {
+    const displayedDates = getDisplayedDates();
+    if (dateRowElement) {
+      dateRowElement.innerHTML = displayedDates.map(date => `<div>${date}</div>`).join("");
+    }
   }
 
-  dayRowElement.innerHTML = daysOfWeek.map(day => `<div>${day}</div>`).join("");
-}
+  function updateDaysOfWeek() {
+    const today = new Date();
+    const daysOfWeek = [];
 
-function getDisplayedDates() {
-  const today = new Date();
-  const currentMonth = today.getMonth();
-  const currentYear = today.getFullYear();
-  const displayedDates = [];
+    for (let i = 0; i < 5; i++) {
+      const date = new Date(today.getFullYear(), today.getMonth(), today.getDate() + i);
+      const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'short' }).toUpperCase();
+      daysOfWeek.push(dayOfWeek);
+    }
 
-  for (let i = 0; i < totalDates; i++) {
-    const date = new Date(currentYear, currentMonth, 1 + currentStartIndex + i);
-    const formattedDate = `${date.getDate()}/${date.getMonth() + 1}`;
-    displayedDates.push(formattedDate);
+    if (dayRowElement) {
+      dayRowElement.innerHTML = daysOfWeek.map(day => `<div>${day}</div>`).join("");
+    }
   }
-  return displayedDates;
-}
 
-function nextDates() {
-  currentStartIndex += totalDates;
+  function getDisplayedDates() {
+    const today = new Date();
+    const currentMonth = today.getMonth();
+    const currentYear = today.getFullYear();
+    const displayedDates = [];
+
+    for (let i = 0; i < totalDates; i++) {
+      const date = new Date(currentYear, currentMonth, 1 + currentStartIndex + i);
+      const formattedDate = `${date.getDate()}/${date.getMonth() + 1}`;
+      displayedDates.push(formattedDate);
+    }
+    return displayedDates;
+  }
+
+  function nextDates() {
+    currentStartIndex += totalDates;
+    updateDates();
+    updateDaysOfWeek();
+  }
+
+  function prevDates() {
+    currentStartIndex -= totalDates;
+    if (currentStartIndex < 0) {
+      currentStartIndex = 0;
+    }
+    updateDates();
+    updateDaysOfWeek();
+  }
+
+  // Initial update
   updateDates();
   updateDaysOfWeek();
-}
 
-function prevDates() {
-  currentStartIndex -= totalDates;
-  if (currentStartIndex < 0) {
-    currentStartIndex = 0;
-  }
-  updateDates();
-  updateDaysOfWeek();
-}
-
-// Initial update
-updateDates();
-updateDaysOfWeek();
-
-// trian
 
 
 
 /////////////// 
 
 
-function criar() {
-  fetch("http://localhost:8080/paciente", 
-  {
-    headers: {
-      "Accept":"application/json",
-      "Content-type":"application/json"
-    },
-    method: "POST",
-    body: JSON.stringify({
-      "nome": document.getElementById("nome").value,
-      "email": document.getElementById("email").value,
-      "senha": document.getElementById("senha").value,
-      "telefone": document.getElementById("telefone").value,
-      "cpf": document.getElementById("cpf").value,
-      "dataNascimento": document.getElementById("dataNascimento").value,
-      "sexo": document.getElementById("sexo").value,
-      "endereco": document.getElementById("endereco").value,
-      "numero": document.getElementById("numero").value,
-      "bairro": document.getElementById("bairro").value,
-      "cidade": document.getElementById("cidade").value,
-      "estado": document.getElementById("estado").value,
-      "cep": document.getElementById("cep").value
-    })
-  })
-  .then(res => res.json())
-  .catch(res => console.log(res))
-}
+// function criar() {
+//   fetch("http://localhost:8080/paciente", 
+//   {
+//     headers: {
+//       "Accept":"application/json",
+//       "Content-type":"application/json"
+//     },
+//     method: "POST",
+//     body: JSON.stringify({
+//       "nome": document.getElementById("nome").value,
+//       "email": document.getElementById("email").value,
+//       "senha": document.getElementById("senha").value,
+//       "telefone": document.getElementById("telefone").value,
+//       "cpf": document.getElementById("cpf").value,
+//       "dataNascimento": document.getElementById("dataNascimento").value,
+//       "sexo": document.getElementById("sexo").value,
+//       "endereco": document.getElementById("endereco").value,
+//       "numero": document.getElementById("numero").value,
+//       "bairro": document.getElementById("bairro").value,
+//       "cidade": document.getElementById("cidade").value,
+//       "estado": document.getElementById("estado").value,
+//       "cep": document.getElementById("cep").value
+//     })
+//   })
+//   .then(res => res.json())
+//   .catch(res => console.log(res))
+// }
 
-formulario.addEventListener("submit", function(event){
-  event.preventDefault();
-  criar();
-  formulario.reset();
-})
+// formulario.addEventListener("submit", function(event){
+//   event.preventDefault();
+//   criar();
+//   formulario.reset();
+// })
 
 /////////// redirecionar ///////////
 
 function redirecionarParaOutraPagina() {
   // Substitua 'outra-pagina.html' pelo caminho real da sua outra página
-  window.location.href = 'http://127.0.0.1:5501/psicologo/psicologo.html';
+  window.location.href = 'http://127.0.0.1:5501/alt_sessoes/alte_sessoes.html';
 }
 
 
-////////
+//////// pop up - alterar sessoes ////////
+
+// script.js
+
+document.addEventListener('DOMContentLoaded', function() {
+  var openPopupBtn = document.getElementById('openPopupBtn');
+  var closePopupBtn = document.getElementById('closePopupBtn');
+  var popup = document.getElementById('popup');
+
+  openPopupBtn.addEventListener('click', function() {
+      popup.style.display = 'block';
+  });
+
+  closePopupBtn.addEventListener('click', function() {
+      popup.style.display = 'none';
+  });
+
+  document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+          popup.style.display = 'none';
+      }
+  });
+});
+
+
+
+
 
 function submitForm() {
     // Obter os valores do formulário

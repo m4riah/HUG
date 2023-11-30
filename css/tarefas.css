@@ -1,3 +1,4 @@
+
 body, h1, h2, h3, p, div {
     margin: 0;
     padding: 0;
@@ -10,7 +11,6 @@ body, h1, h2, h3, p, div {
     padding: 0;
     height: 130vh;
     display: flex;
-    
 }
 
 .menu-fixo {
@@ -94,4 +94,11 @@ body, h1, h2, h3, p, div {
 
 .op-menu.clicked .text-menu {
     color: #FFFFFF;
+}
+
+.h1-tarefas {
+    color: #329F92;
+    margin-left: 40px;
+    margin-top: 40px;
+    font-family: 'Raleway', sans-serif;
 }

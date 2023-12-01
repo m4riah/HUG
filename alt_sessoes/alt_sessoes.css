@@ -25,7 +25,7 @@
     align-items: center;
     justify-content: space-between;
     width: 90px;
-    /* ajuste a largura conforme necessário */
+    text-decoration: none;
     margin-top: 30px;
     margin-bottom: 70px;
   }
@@ -230,6 +230,7 @@
     text-align: center;
     border: 1px solid #6D6161;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: -40px;
   }
   
   .container-3 h2 {
@@ -244,8 +245,7 @@
   
   .paragrafo {
     position: absolute;
-    top: 65%;
-    /* Ajuste conforme necessário para garantir a distância desejada */
+    top: 55%;
     left: 0;
     width: 400px;
     padding-left: 50px;
@@ -265,3 +265,81 @@
     color: #2A413E;
     font-weight: medium;
   }
+
+  .botao-alterar{
+    width: 200px;
+    background-color: #8FDFD4;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: auto;
+    margin-right: 100px;
+    margin-bottom: 500px;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.popup-content {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.op-troca{
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.botao-cancelar{
+  width: 120px;
+  height: 35px;
+  background-color: #8FAFB8;
+  border: 1px solid #B1ACAC;
+  text-align: center;
+  line-height: 35px;
+  color: #616F73;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.botao-trocar{
+  width: 120px;
+  height: 35px;
+  background-color: #8FDFD4;
+  border: 1px solid #329F92;
+  text-align: center;
+  line-height: 35px;
+  color: #616F73;
+  text-decoration: none;
+  border-radius: 8px;
+}

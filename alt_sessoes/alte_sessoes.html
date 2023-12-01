@@ -5,13 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/images/logobarra.png" type="image/x-icon">
-  <link rel="stylesheet" href="/psicologo/psicologo.css">
+  <link rel="stylesheet" href="/alt_sessoes/alt_sessoes.css">
   <title>HUG</title>
 </head>
 
 <body>
-
-  <div> <button class="voltar"> <img src="/images/voltar8.png"> VOLTAR</button></div>
+  <a href="/sessoes/sessoes.html" class="voltar"><img src="/images/voltar8.png"> VOLTAR</a >
 
   <div class="triangulo"></div>
 
@@ -30,14 +29,14 @@
     </div>
 
     <div class="container-1">
-      <h2 class="agendar">Agendar Horário</h2>
-      <div class="date-carousel">
-        <button onclick="prevDates()" class="botao-carrossel"> <img src="/images/preview.png"> </button>
-        <div id="dateRow" class="horizontal-dates">
-          <!-- Dates will be inserted here dynamically -->
+        <h2 class="agendar">Agendar Horário</h2>
+        <div class="date-carousel">
+          <button onclick="prevDates()" class="botao-carrossel"> <img src="/images/preview.png"> </button>
+          <div id="dateRow" class="horizontal-dates">
+            <!-- Dates will be inserted here dynamically -->
+          </div>
+          <button onclick="nextDates()" class="botao-carrossel"> <img src="/images/next.png"> </button>
         </div>
-        <button onclick="nextDates()" class="botao-carrossel"> <img src="/images/next.png"> </button>
-      </div>
 
       <table>
         <thead>
@@ -80,9 +79,19 @@
     <h2>ATENÇÃO!!</h2>
     <P>TODAS AS CONSULTAS SERÃO REALIZADAS DE FORMA ONLINE.</P>
   </div>
-
   <p class="p-contato">Agende seu horário ou entre em contato em caso de dúvidas.</p>
-
+  <button id="openPopupBtn" class="botao-alterar">Trocar psicólogo</button>
+  
+  <div class="popup" id="popup">
+      <div class="popup-content">
+          <span class="close" id="closePopupBtn">&times;</span>
+          <h2>Deseja trocar de psicólogo(a)?</h2>
+          <p>Atenção: A troca de psicólogo é permitida somente uma vez, em respeito ao profissional.</p>
+          <div class="op-troca">
+          <a href="/alt_sessoes/alte_sessoes.html" class="botao-cancelar">Cancelar</a>
+          <a href="/alt_sessoes/alte_sessoes.html" class="botao-trocar">Confirmar</a>
+      </div>
+  </div>
 
 
 

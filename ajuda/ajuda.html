@@ -83,37 +83,36 @@
 
 
         <P></P>
-        <div class="titulo"> 
-            <h1>Precisa de ajuda? Entre em contato</h1>
-            
+         
         
-
-       <div class="grupo">
-
-        <label>Digite seu nome completo</label>
-        <input type="text" name="nome completo" placeholder="Nome"> 
-
+        <div class="container">
+            <div class="titulo"> 
+                <h1>Precisa de ajuda? Entre em contato</h1>
+            </div>
     
-      </div>
-
-      <div>
-
-        <label>Email</label>
-        <input type="email" email="Email" placeholder="email">
-      
+            <form action="#" method="post" class="formulario">
+                <div class="grupo">
+                    <label for="nomeCompleto">Digite seu nome completo</label>
+                    <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome" required>
+                </div>
     
+                <div class="grupo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+    
+                <div class="grupo">
+                    <label for="problema">Descreva seu problema</label>
+                    <textarea id="problema" name="problema" placeholder="Descreva seu problema" rows="4" required></textarea>
+                </div>
+    
+                <div class="grupo">
+                    <button type="submit" class="botao">Enviar</button>
+                </div>
+            </form>
+        </div>
     </div>
-
-    <div>
-
-      <label>Digite seu problema</label>
-      <input type="text" placeholder="menssagem">
-
-    </div>
-    </div>
-    </div>
-
-    </div>
+</div>
 
     </div>
 </body>

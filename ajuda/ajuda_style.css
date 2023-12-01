@@ -88,10 +88,46 @@ body, h1, h2, h3, p, div {
 
 .op-menu.clicked {
     background-color: #1A816E;
-    transition: background-color 0.5s ease; /* Adjust the duration as needed */
+    transition: background-color 0.5s ease;
     
 }
 
 .op-menu.clicked .text-menu {
     color: #FFFFFF;
+}
+
+.container {
+    
+}
+
+.grupo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button.botao {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.botao:hover {
+    background-color: #45a049;
 }

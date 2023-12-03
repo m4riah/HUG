@@ -9,14 +9,16 @@
 <body>
   <div id="form">
     <form action="">
-        <h2 class="title">Criar nova conta</h2>
+        <div class="h1">
+            <h1 class="title">Criar uma nova conta</h1>
+        </div>
         <label for="username">Digite seu nome completo:</label>
         <div class="input">
             <input id="username" class="username" type="text" placeholder="Nome completo">
         </div>
         <label for="">Digite seu E-mail</label>
         <div class="input">
-            <input id="email" class="email" type="email" placeholder="E-mail">
+            <input id="email" class="email" type="text" placeholder="E-mail">
         </div>
         <label for="ddd"></label>
         <div class="input">
@@ -46,8 +48,22 @@
         <div class="input">
             <input type="password" id="confirmar_senha" name="confirmar_senha" placeholder="confirma senha" required>
         </div>
+        <div class="toggle-container">
+        <label class="toggle">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+          <span class="toggle-label">Declaro que li e concordo com os <a href="#">Termos de serviços</a></span>
         </div>
-        
+         
+        <div class="buttons">
+            <button class="btn-voltar">
+                VOLTAR
+            </button>
+
+        <button class="btn-enviar">
+            ENVIAR
+        </button>
     </form>
     
 </body>

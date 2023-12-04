@@ -1,3 +1,253 @@
+body, h1, h2, h3, p, div {
+    margin: 0;
+    padding: 0;
+}
+
+.wireframe {
+    background-color: #FFFFFF;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 130vh;
+    display: flex;
+    
+}
+
+.menu-fixo {
+    width: 330px;
+    height: 1024px;
+    background-color: #8fdfd4;
+    border-top-right-radius: 15px;
+}
+
+.logo1 {
+    width: 177px;
+    height: 52px;
+    padding-top: 50px;
+    padding-left: 80px;
+}
+
+.frase-logo {
+    font-size: 10px;
+    width: 159px;
+    text-align: center;
+    font-family: 'inter';
+    color: #1A816E;
+    padding-top: 10px;
+    padding-left: 80px;
+}
+
+.linha {
+    background-color: #8EC0B9;
+    margin-top: 50px;
+}
+
+
+
+.op-menu-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.op-menu {
+    width: 230px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.icon-menu {
+    margin-right: 10px;
+}
+
+.icon-menu img {
+    max-width: 100%;
+}
+
+.text-menu {
+    color: #FFFFFF;
+    font-family: 'arimo';
+}
+
+.op-menu:hover {
+    background-color: #36C6C6;
+    background-image: url('img/iconmonstr-building-4-240.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.op-menu:hover .text-menu {
+    color: #FFFFFF;
+}
+
+.op-menu.clicked {
+    background-color: #1A816E;
+    transition: background-color 0.5s ease; /* Adjust the duration as needed */
+    
+}
+
+.op-menu.clicked .text-menu {
+    color: #FFFFFF;
+}
+.textos{
+    margin-left: 48px;
+    margin-top: 52px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.text1{
+    color: #8FDFD4;
+}
+.text2{
+    width: 157px;
+    color: #053C34;;
+}
+.banner{
+    position:absolute;
+    top: 586px;
+    left: 465px;
+    border: solid 0.2px transparent;
+    background-color: #72D4C7;
+    width: 890px;
+    height: 430px;
+    z-index: 0;
+}
+.img-hug{
+    position: absolute;
+    border: solid 0.1px transparent ;
+    background: #329F92;
+    height:240px;
+    width: 340px;
+    top: 570px;
+    left:400px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    background-image: url(/images/HUG_4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.titulo-banner{
+    color: #09826B;
+    text-align: center;
+    font-family: Inter;
+    margin-left: 60px;
+    margin-top: 29px;
+    font-size: 35px;
+    font-weight: 600;
+}
+.texto-banner{
+    color: #fafafa;
+    text-align: center;
+    font-size: 21px;
+    font-family: Inter;
+    height: 100px;
+    width: 520px;
+    margin-left:300px;
+    margin-top: 50px;
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 html ::-webkit-scrollbar {
     width: 10px;
 }
@@ -6,6 +256,10 @@ html ::-webkit-scrollbar-thumb {
     border-radius: 50px;
     background-color: #329F92; 
 }
+
+
+
+
 
 body, h1, h2, h3, p, div {
     margin: 0;

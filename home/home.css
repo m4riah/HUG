@@ -7,6 +7,10 @@ html ::-webkit-scrollbar-thumb {
     background-color: #329F92; 
 }
 
+body {
+    overflow-x: hidden;
+}
+
 body, h1, h2, h3, p, div {
     margin: 0;
     padding: 0;
@@ -50,8 +54,6 @@ body, h1, h2, h3, p, div {
     background-color: #8EC0B9;
     margin-top: 50px;
 }
-
-
 
 .op-menu-container {
     display: flex;
@@ -98,25 +100,28 @@ body, h1, h2, h3, p, div {
 .op-menu.clicked {
     background-color: #1A816E;
     transition: background-color 0.5s ease; /* Adjust the duration as needed */
-    
 }
 
 .op-menu.clicked .text-menu {
     color: #FFFFFF;
 }
+
 .textos{
     margin-left: 48px;
     margin-top: 52px;
     font-weight: 500;
     font-size: 15px;
 }
+
 .text1{
     color: #8FDFD4;
 }
+
 .text2{
     width: 157px;
     color: #053C34;;
 }
+
 .banner{
     position:absolute;
     top: 586px;
@@ -127,6 +132,7 @@ body, h1, h2, h3, p, div {
     height: 430px;
     z-index: 0;
 }
+
 .img-hug{
     position: absolute;
     border: solid 0.1px transparent ;
@@ -152,6 +158,7 @@ body, h1, h2, h3, p, div {
     font-size: 35px;
     font-weight: 600;
 }
+
 .texto-banner{
     color: #fafafa;
     text-align: center;
@@ -161,7 +168,4 @@ body, h1, h2, h3, p, div {
     width: 520px;
     margin-left:300px;
     margin-top: 50px;
-
-
-    
 }

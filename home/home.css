@@ -107,21 +107,33 @@ body, h1, h2, h3, p, div {
 }
 
 .textos{
+    font-family: Heebo;
     margin-left: 48px;
     margin-top: 52px;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .text1{
     color: #8FDFD4;
+    
 }
+.text1 > h2 > #text-destaque{
+    color:  #8FDFD4;
+    font-weight: 950;
+    line-height: normal;
+    font-style: normal;
+    
+
+} 
 
 .text2{
-    width: 157px;
+    width: 209px;
     color: #053C34;;
 }
-
+.container-banner{
+    
+}
 .banner{
     position:absolute;
     top: 586px;
@@ -168,4 +180,5 @@ body, h1, h2, h3, p, div {
     width: 520px;
     margin-left:300px;
     margin-top: 50px;
+    text-align: left;
 }

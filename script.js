@@ -80,53 +80,12 @@ document.addEventListener('DOMContentLoaded', function () {
   updateDates();
   updateDaysOfWeek();
 
-
-
-
-/////////////// 
-
-
-// function criar() {
-//   fetch("http://localhost:8080/paciente", 
-//   {
-//     headers: {
-//       "Accept":"application/json",
-//       "Content-type":"application/json"
-//     },
-//     method: "POST",
-//     body: JSON.stringify({
-//       "nome": document.getElementById("nome").value,
-//       "email": document.getElementById("email").value,
-//       "senha": document.getElementById("senha").value,
-//       "telefone": document.getElementById("telefone").value,
-//       "cpf": document.getElementById("cpf").value,
-//       "dataNascimento": document.getElementById("dataNascimento").value,
-//       "sexo": document.getElementById("sexo").value,
-//       "endereco": document.getElementById("endereco").value,
-//       "numero": document.getElementById("numero").value,
-//       "bairro": document.getElementById("bairro").value,
-//       "cidade": document.getElementById("cidade").value,
-//       "estado": document.getElementById("estado").value,
-//       "cep": document.getElementById("cep").value
-//     })
-//   })
-//   .then(res => res.json())
-//   .catch(res => console.log(res))
-// }
-
-// formulario.addEventListener("submit", function(event){
-//   event.preventDefault();
-//   criar();
-//   formulario.reset();
-// })
-
 /////////// redirecionar ///////////
 
 function redirecionarParaOutraPagina() {
   // Substitua 'outra-pagina.html' pelo caminho real da sua outra página
   window.location.href = 'http://127.0.0.1:5501/alt_sessoes/alte_sessoes.html';
 }
-
 
 //////// pop up - alterar sessoes ////////
 

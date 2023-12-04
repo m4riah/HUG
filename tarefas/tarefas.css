@@ -1,16 +1,23 @@
+html ::-webkit-scrollbar {
+    width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #329F92; 
+}
+
 body, h1, h2, h3, p, div {
     margin: 0;
     padding: 0;
 }
 
 .wireframe {
-    background-color: #FFFFFF;
+    background: linear-gradient(to bottom, #ffffff 50%, #5c9d9d 50%);
     position: relative;
     margin: 0;
     padding: 0;
-    height: 130vh;
     display: flex;
-    
 }
 
 .menu-fixo {
@@ -88,7 +95,7 @@ body, h1, h2, h3, p, div {
 
 .op-menu.clicked {
     background-color: #1A816E;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease; /* Adjust the duration as needed */
     
 }
 
@@ -96,38 +103,58 @@ body, h1, h2, h3, p, div {
     color: #FFFFFF;
 }
 
-.container {
-    
+.h1-tarefas {
+    color: #329F92;
+    margin-left: 40px;
+    margin-top: 60px;
+    font-family: 'Raleway', sans-serif;
 }
 
-.grupo {
-    margin-bottom: 20px;
+.task-list {
+    list-style: none;
+    padding: 0;
 }
 
-label {
-    display: block;
+.task-list li {
+    display: flex;
+    align-items: center;
     margin-bottom: 8px;
-    color: #333;
+    margin-left: 10px;
+    margin-top: 16px;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button.botao {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
+.task-list input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.4);
     cursor: pointer;
 }
 
-button.botao:hover {
-    background-color: #45a049;
+.task-list input[type="checkbox"]:checked {
+accent-color: rgb(10, 160, 10);
+}
+
+.task-list input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #7e7d7d;
+}
+
+
+
+.task-list label {
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 6px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container-list {
+    padding-top: 10px;
+    margin-left: 40px;
+    top: 40px;
+    background-color: #F5F5F5;
+    width: 840px;
+    height: 400px;
+    position: relative;
+    border: #00000033;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }

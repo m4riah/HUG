@@ -158,3 +158,19 @@ function submitForm() {
         // Adicione aqui lógica adicional para lidar com erros
     });
 }
+
+
+//EVENTO CLICK PARA PAG HOME (SELEÇÃO DE PSI)/
+function voltarParaHome() {
+  window.location.href = '/home/home.html';
+}
+
+//EVENTO CLICK PARA SOBRE PSICOLOGO(A)/
+function voltarParPsi() {
+  window.location.href = '/psicologo/psicologo.html';
+}
+
+//EVENTO CLICK PARA VOLTA SELEÇÃO PSICOLOGO(A)/
+function voltarSelecao() {
+  window.location.href = '/selecao/selecao.html';
+}

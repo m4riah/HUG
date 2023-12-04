@@ -1,3 +1,11 @@
+html ::-webkit-scrollbar {
+    width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #329F92; 
+}
 
 body, h1, h2, h3, p, div {
     margin: 0;
@@ -11,6 +19,7 @@ body, h1, h2, h3, p, div {
     padding: 0;
     height: 130vh;
     display: flex;
+    
 }
 
 .menu-fixo {
@@ -88,7 +97,7 @@ body, h1, h2, h3, p, div {
 
 .op-menu.clicked {
     background-color: #1A816E;
-    transition: background-color 0.5s ease; /* Adjust the duration as needed */
+    transition: background-color 0.5s ease;
     
 }
 
@@ -96,9 +105,49 @@ body, h1, h2, h3, p, div {
     color: #FFFFFF;
 }
 
-.h1-tarefas {
+.container {
+    margin: 50px;
+}
+
+.titulo {
     color: #329F92;
-    margin-left: 40px;
-    margin-top: 40px;
     font-family: 'Raleway', sans-serif;
+}
+
+.grupo {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #A3E0D8;
+    border-radius: 10px;
+    outline:none;
+    background-color: #FCFCFC;
+}
+
+button.botao {
+    background-color: #8EC0B9;
+    color: white;
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
+    border: 1px solid #5AD2E2;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+button.botao:hover {
+    background-color: #6e9791;
 }

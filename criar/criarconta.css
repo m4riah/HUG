@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?família=Inter:wght@400; 500&família=Nunito+Sans:opsz,wght@6.. 12.200&family=Open+Sans:wght@500&family=Poppins:ital,wght@1.200; 1.300&família=Roboto:wght@100; 300&family=Smooch+Sans:wght@100&display=swap');
 
-* {
 
-    padding: 0;
-}
 
 body {
     width: 100%;
@@ -13,8 +10,8 @@ body {
 }
 #form {
     position: relative;
-    top: 50%;
-    left: 50%;
+    top: 2%;
+    left: 55%;
     transform: translate(-50%, -50%);
     background: #fff;
     border-radius: 10px;
@@ -23,15 +20,36 @@ body {
     align-items: center;
 }
 
+.decoration1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.triangulo1 {
+  width: 0;
+  height: 0;
+  border-left: 400px solid transparent; /* Ajustado o valor da borda esquerda */
+  border-top: 400px solid #8FDFD4; /* Alterado de border-bottom para border-top */
+  transform: rotate(270deg); /* Ajustado o ângulo de rotação */
+}
+
+.img-logo img {
+  width: 150px;
+  position: absolute;
+  top: 30px;
+  left: 50px; 
+  z-index: 1; 
+}
+
 .title {
-    font-size: 1.8em;
+    font-size: 40px;
     min-width: 200px;
+    font-family: 'Nunito', 'Sans-serif';
 }
 
 .input {
-    margin-top: 5px;
+    margin-top: 9px;
     border-radius: 10px;
-    width: 340px;
     height: 20px;
     padding: 10px;
     background-color: #FCFCFC;
@@ -44,15 +62,15 @@ body {
     width: 80%;
     border: none;
     outline: none;
-    font-family: 'Poppins' 'Sans-serif';
+    font-family: 'Nunito' 'Sans-serif';
     color: black;
 }
 
 h1 {
     margin-top: 10px;
     font-size: 30px;
-    font-family: 'Nunito', sans-serif;
-    color: #3B3636;
+    font-family: 'Nunito', Sans-serif;
+    color: rgb(59, 54, 54);
 } 
 
 .toggle-container {
@@ -130,7 +148,7 @@ h1 {
   }
 
   .btn-voltar {
-    margin-right: 90px;
+    margin-right: 240px;
     border: none;
     background: none;
     color: #0C7886;;
@@ -144,3 +162,13 @@ h1 {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.13);
 }
 
+.form-group {
+      display: flex;
+      margin-bottom: 10px;
+  }
+
+  .form-group label {
+    margin-right: 10px;
+    width: 40px; /* Largura dos rótulos */
+    text-align: right;
+  }

@@ -1,0 +1,221 @@
+html ::-webkit-scrollbar {
+    width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #329F92; 
+}
+
+.triangulo {
+    width: 45vw;
+    height: 25vh;
+    clip-path: polygon(100% 0%, 50% 0%, 100% 100%);
+    background-color: #8FDFD4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("/images/HUG_5.png");
+    background-repeat: no-repeat;
+    background-position: right bottom 80px;
+    /* Ajuste os valores conforme necessário */
+}
+  
+.voltar {
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90px;
+    /* ajuste a largura conforme necessário */
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: #0C7886;
+}
+  
+.voltar img {
+    max-width: 50%;
+    /* ajuste conforme necessário */
+}
+  
+.container-topo {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas de largura igual */
+    gap: 40px;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    align-items: center; /* Centraliza os cards verticalmente */
+}
+
+.h1 {
+    margin-bottom: 35px;
+    color: #7E8180;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.card {
+    height: 290px;
+    width: 246px;
+    display: flex;
+    flex-direction: column;
+    background-color: #166F64;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.div1 {
+    padding: 30px;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 {
+    height: 40%;
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.178);
+}
+
+.border-circle {
+    padding: 5px;
+    width: 130px;
+    height: 120px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-circle {
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/perfil.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.image-psi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-saiba {
+    width: 110px;
+    height: 34px;
+    border-radius: 20px;
+    background-color: #166F64;
+    color: white;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #047465;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#p-psic {
+    color: #8FDFD4;
+    font: 9px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px !important;
+}
+
+#p-nome {
+    margin: 0px !important;
+    color: #FFFFFF;
+    font-size: 19px;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+}
+
+.img-circle-1 {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://s3-sa-east-1.amazonaws.com/doctoralia.com.br/doctor/9becb1/9becb14c1d4712b639e5599ffee0c678_large.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.img-circle-2 {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://s3.sa-east-1.amazonaws.com/doctoralia.cl/doctor/12f572/12f57284cd9bbee24f1eba81617947d7_large.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.img-circle-3 {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://s3-eu-west-1.amazonaws.com/doctoralia.es/doctor/f60fa2/f60fa2dddfff2afd5ddcb10ec902896e_large.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.img-circle-4 {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://s3-sa-east-1.amazonaws.com/doctoralia.com.br/doctor/578a49/578a498aea6386bedbc9403402c0068e_large.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.img-circle-5 {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://s3-sa-east-1.amazonaws.com/doctoralia.com.br/doctor/7d7791/7d77914b0372c481b5b28082da801127_large.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.img-circle-6 {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://s3-sa-east-1.amazonaws.com/doctoralia.com.br/doctor/53f983/53f983b2f3704be95bfb0f21b8f81f4e_large.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.img-circle-7 {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://s3-sa-east-1.amazonaws.com/doctoralia.com.br/doctor/89d769/89d769885b5576ebe1cdcb6a688fc76a_large.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}

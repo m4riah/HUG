@@ -1,3 +1,12 @@
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #329F92; 
+}
+
 .triangulo {
     width: 45vw;
     height: 25vh;
@@ -28,6 +37,10 @@
     /* ajuste a largura conforme necessário */
     margin-top: 30px;
     margin-bottom: 70px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: #0C7886;
+    margin-left: 8px;
   }
   
   .voltar img {

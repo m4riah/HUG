@@ -1,3 +1,16 @@
+html ::-webkit-scrollbar {
+    width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #329F92; 
+}
+
+body {
+    overflow-x: hidden;
+}
+
 body, h1, h2, h3, p, div {
     margin: 0;
     padding: 0;
@@ -41,8 +54,6 @@ body, h1, h2, h3, p, div {
     background-color: #8EC0B9;
     margin-top: 50px;
 }
-
-
 
 .op-menu-container {
     display: flex;
@@ -88,46 +99,73 @@ body, h1, h2, h3, p, div {
 
 .op-menu.clicked {
     background-color: #1A816E;
-    transition: background-color 0.5s ease;
-    
+    transition: background-color 0.5s ease; /* Adjust the duration as needed */
 }
 
 .op-menu.clicked .text-menu {
     color: #FFFFFF;
 }
 
-.container {
-    
+.textos{
+    margin-left: 48px;
+    margin-top: 52px;
+    font-weight: 500;
+    font-size: 15px;
 }
 
-.grupo {
-    margin-bottom: 20px;
+.text1{
+    color: #8FDFD4;
 }
 
-label {
-    display: block;
-    margin-bottom: 8px;
-    color: #333;
+.text2{
+    width: 157px;
+    color: #053C34;;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.banner{
+    position:absolute;
+    top: 586px;
+    left: 465px;
+    border: solid 0.2px transparent;
+    background-color: #72D4C7;
+    width: 890px;
+    height: 430px;
+    z-index: 0;
 }
 
-button.botao {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
+.img-hug{
+    position: absolute;
+    border: solid 0.1px transparent ;
+    background: #329F92;
+    height:240px;
+    width: 340px;
+    top: 570px;
+    left:400px;
     border-radius: 5px;
-    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    background-image: url(/images/HUG_4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
 }
 
-button.botao:hover {
-    background-color: #45a049;
+.titulo-banner{
+    color: #09826B;
+    text-align: center;
+    font-family: Inter;
+    margin-left: 60px;
+    margin-top: 29px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.texto-banner{
+    color: #fafafa;
+    text-align: center;
+    font-size: 21px;
+    font-family: Inter;
+    height: 100px;
+    width: 520px;
+    margin-left:300px;
+    margin-top: 50px;
 }

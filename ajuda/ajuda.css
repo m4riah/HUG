@@ -1,0 +1,153 @@
+html ::-webkit-scrollbar {
+    width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #329F92; 
+}
+
+body, h1, h2, h3, p, div {
+    margin: 0;
+    padding: 0;
+}
+
+.wireframe {
+    background-color: #FFFFFF;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 130vh;
+    display: flex;
+    
+}
+
+.menu-fixo {
+    width: 330px;
+    height: 1024px;
+    background-color: #8fdfd4;
+    border-top-right-radius: 15px;
+}
+
+.logo1 {
+    width: 177px;
+    height: 52px;
+    padding-top: 50px;
+    padding-left: 80px;
+}
+
+.frase-logo {
+    font-size: 10px;
+    width: 159px;
+    text-align: center;
+    font-family: 'inter';
+    color: #1A816E;
+    padding-top: 10px;
+    padding-left: 80px;
+}
+
+.linha {
+    background-color: #8EC0B9;
+    margin-top: 50px;
+}
+
+
+
+.op-menu-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.op-menu {
+    width: 230px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.icon-menu {
+    margin-right: 10px;
+}
+
+.icon-menu img {
+    max-width: 100%;
+}
+
+.text-menu {
+    color: #FFFFFF;
+    font-family: 'arimo';
+}
+
+.op-menu:hover {
+    background-color: #36C6C6;
+    background-image: url('img/iconmonstr-building-4-240.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.op-menu:hover .text-menu {
+    color: #FFFFFF;
+}
+
+.op-menu.clicked {
+    background-color: #1A816E;
+    transition: background-color 0.5s ease;
+    
+}
+
+.op-menu.clicked .text-menu {
+    color: #FFFFFF;
+}
+
+.container {
+    margin: 50px;
+}
+
+.titulo {
+    color: #329F92;
+    font-family: 'Raleway', sans-serif;
+}
+
+.grupo {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #A3E0D8;
+    border-radius: 10px;
+    outline:none;
+    background-color: #FCFCFC;
+}
+
+button.botao {
+    background-color: #8EC0B9;
+    color: white;
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
+    border: 1px solid #5AD2E2;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+button.botao:hover {
+    background-color: #6e9791;
+}

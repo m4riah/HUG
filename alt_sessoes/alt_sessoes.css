@@ -1,3 +1,12 @@
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #329F92; 
+}
+
 .triangulo {
     width: 45vw;
     height: 25vh;
@@ -25,9 +34,14 @@
     align-items: center;
     justify-content: space-between;
     width: 90px;
-    text-decoration: none;
+    /* ajuste a largura conforme necessário */
     margin-top: 30px;
     margin-bottom: 70px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: #0C7886;
+    margin-left: 8px;
+    text-decoration: none;
   }
   
   .voltar img {
@@ -57,6 +71,7 @@
   
   .container-2 h4 {
     color: #23807E;
+    margin-right: 120px;
   }
   
   
@@ -92,6 +107,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 15px;
   }
   
   .rede-social {
@@ -108,7 +124,7 @@
     color: black;
     text-decoration: none;
   }
-  
+
   .container-1 {
     width: 450px;
     height: 450px;
@@ -123,6 +139,7 @@
     padding-left: 35px;
     padding-right: 35px;
     margin-right: 30px;
+    margin-top: 50px;
   }
   
   body {
@@ -225,12 +242,12 @@
     width: 520px;
     height: 110px;
     background-color: #DAECEA;
-    margin-left: 50px;
-    flex-direction: column;
+    margin-left: auto; /* Alterado de margin-right para margin-left: auto */
     text-align: center;
     border: 1px solid #6D6161;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    margin-top: -40px;
+    margin-top: 20px;
+    margin-right: 30px;
   }
   
   .container-3 h2 {
@@ -241,18 +258,20 @@
   .container-3 p {
     color: #4A4A4A;
     font-weight: bold;
+    font-size: 15px;
   }
   
   .paragrafo {
     position: absolute;
-    top: 55%;
+    top: 65%;
+    /* Ajuste conforme necessário para garantir a distância desejada */
     left: 0;
     width: 400px;
     padding-left: 50px;
   }
   
   .paragrafo p {
-    font-size: 16px;
+    font-size: 19px;
     /* Ajuste o tamanho da fonte conforme necessário */
     color: #E7FEFB;
     /* Ajuste a cor do texto conforme necessário */
@@ -268,19 +287,18 @@
 
   .botao-alterar{
     width: 200px;
-    background-color: #8FDFD4;
+    background-color: #d10505;
     border: none;
-    color: #fff;
-    padding: 10px 20px;
+    color: #ffffff;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
     cursor: pointer;
     border-radius: 5px;
-    margin: auto;
-    margin-right: 100px;
-    margin-bottom: 500px;
+    margin-left: 10px;
+    margin-top: 40px;
   }
 
   .popup {
@@ -323,11 +341,11 @@
 .botao-cancelar{
   width: 120px;
   height: 35px;
-  background-color: #8FAFB8;
-  border: 1px solid #B1ACAC;
+  background-color: #d10505;
+  border: 1px solid #920a0a;
   text-align: center;
   line-height: 35px;
-  color: #616F73;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 8px;
 }
@@ -335,11 +353,11 @@
 .botao-trocar{
   width: 120px;
   height: 35px;
-  background-color: #8FDFD4;
+  background-color: rgb(12, 196, 5);
   border: 1px solid #329F92;
   text-align: center;
   line-height: 35px;
-  color: #616F73;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 8px;
 }

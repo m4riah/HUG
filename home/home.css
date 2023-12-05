@@ -109,34 +109,33 @@ body, h1, h2, h3, p, div {
 .textos{
     font-family: Heebo;
     margin-left: 48px;
-    margin-top: 52px;
+    margin-top: 20px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .text1{
     color: #8FDFD4;
-    
+    font-family: 'Manrope', sans-serif;
 }
 .text1 > h2 > #text-destaque{
     color:  #8FDFD4;
     font-weight: 950;
     line-height: normal;
     font-style: normal;
-    
-
+    font-family: 'Noto Sans', sans-serif;
 } 
 
 .text2{
-    width: 209px;
+    width: 220px;
     color: #053C34;;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 22px;
 }
-.container-banner{
-    
-}
+
 .banner{
     position:absolute;
-    top: 586px;
+    top: 506px;
     left: 465px;
     border: solid 0.2px transparent;
     background-color: #72D4C7;
@@ -151,7 +150,7 @@ body, h1, h2, h3, p, div {
     background: #329F92;
     height:240px;
     width: 340px;
-    top: 570px;
+    top: 490px;
     left:400px;
     border-radius: 5px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
@@ -164,10 +163,10 @@ body, h1, h2, h3, p, div {
 .titulo-banner{
     color: #09826B;
     text-align: center;
-    font-family: Inter;
+    font-family: 'Manrope', sans-serif;
     margin-left: 60px;
     margin-top: 29px;
-    font-size: 35px;
+    font-size: 38px;
     font-weight: 600;
 }
 
@@ -175,10 +174,76 @@ body, h1, h2, h3, p, div {
     color: #fafafa;
     text-align: center;
     font-size: 21px;
-    font-family: Inter;
+    font-family: 'Montserrat', sans-serif;
     height: 100px;
     width: 520px;
     margin-left:300px;
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: left;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+   margin-left: 120px;
+   margin-top: 40px;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+    border-radius: 5px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    margin-top: -130px;
+}
+
+.manual-btn {
+    border: 2px solid #dbdbdb;
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #FFFFFF;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
 }

@@ -109,9 +109,9 @@ body, h1, h2, h3, p, div {
 .textos{
     font-family: Heebo;
     margin-left: 48px;
-    margin-top: 52px;
+    margin-top: 20px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .text1{
@@ -127,14 +127,15 @@ body, h1, h2, h3, p, div {
 } 
 
 .text2{
-    width: 240px;
+    width: 220px;
     color: #053C34;;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 22px;
 }
 
 .banner{
     position:absolute;
-    top: 586px;
+    top: 506px;
     left: 465px;
     border: solid 0.2px transparent;
     background-color: #72D4C7;
@@ -149,7 +150,7 @@ body, h1, h2, h3, p, div {
     background: #329F92;
     height:240px;
     width: 340px;
-    top: 570px;
+    top: 490px;
     left:400px;
     border-radius: 5px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;

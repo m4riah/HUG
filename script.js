@@ -1,19 +1,56 @@
+//IR PARA PAGINA INICIAL/
+function redirecionarParaHome() {
+  // Redireciona para a página desejada
+  window.location.href = "/home/home.html";
+}
+
 /////////////// BASE /////////////////
 
 document.addEventListener('DOMContentLoaded', function () {
-    var opMenus = document.querySelectorAll('.op-menu');
+  var opMenus = document.querySelectorAll('.op-menu');
 
-    opMenus.forEach(function (opMenu) {
-        opMenu.addEventListener('click', function () {
-            // Remove 'clicked' class from all op-menus
-            opMenus.forEach(function (menu) {
-                menu.classList.remove('clicked');
-            });
+  opMenus.forEach(function (opMenu) {
+      opMenu.addEventListener('click', function () {
+          // Remove 'clicked' class from all op-menus
+          opMenus.forEach(function (menu) {
+              menu.classList.remove('clicked');
+          });
 
-            // Add 'clicked' class to the clicked op-menu
-            opMenu.classList.add('clicked');
-        });
-    });
+          // Add 'clicked' class to the clicked op-menu
+          opMenu.classList.add('clicked');
+
+          // Check if the clicked op-menu is the "INÍCIO" menu item
+          if (opMenu.querySelector('.text-menu').textContent.trim() === 'INÍCIO') {
+              // Redirect to the home page
+              window.location.href = '/home/home.html';
+          }
+
+          //IR PARA MINHAS SESSÕES/
+          if (opMenu.querySelector('.text-menu').textContent.trim() === 'MINHAS SESSÕES') {
+            // Redirect to the home page
+            window.location.href = '/sessoes/sessoes.html';
+        }
+
+        //IR PARA TELA PSICOLOGOS/
+        if (opMenu.querySelector('.text-menu').textContent.trim() === 'PSICÓLOGOS') {
+          // Redirect to the home page
+          window.location.href = '/selecao/selecao.html';
+        }
+
+              //IR PARA TELA AJUDA/
+              if (opMenu.querySelector('.text-menu').textContent.trim() === 'AJUDA') {
+                // Redirect to the home page
+                window.location.href = '/ajuda/ajuda.html';
+        }
+
+                    //IR PARA PSICOLOGOS/
+        if (opMenu.querySelector('.text-menu').textContent.trim() === 'SAIR') {
+          // Redirect to the home page
+          window.location.href = '/index.html';
+        }
+      
+      });
+  });
 });
 
 
@@ -110,9 +147,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 });
-
-
-
 
 
 function submitForm() {

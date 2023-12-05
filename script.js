@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
 /////////// redirecionar para pag alt_sessoes ///////////
 
 function redirecionarParaOutraPagina() {
-  window.location.href = '/alteracaoSessoes/alt_sessoes.html';
+  window.location.href = '/alteracao/alterarsessoes.html';
 }
 
 //////// pop up - alterar sessoes ////////

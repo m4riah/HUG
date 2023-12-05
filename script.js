@@ -117,11 +117,10 @@ document.addEventListener('DOMContentLoaded', function () {
   updateDates();
   updateDaysOfWeek();
 
-/////////// redirecionar ///////////
+/////////// redirecionar para pag alt_sessoes ///////////
 
 function redirecionarParaOutraPagina() {
-  // Substitua 'outra-pagina.html' pelo caminho real da sua outra página
-  window.location.href = 'http://127.0.0.1:5501/alt_sessoes/alte_sessoes.html';
+  window.location.href = '/alteracao/alterarsessoes.html';
 }
 
 //////// pop up - alterar sessoes ////////

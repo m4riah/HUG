@@ -240,3 +240,9 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("radio" + count).checked = true;
   }
 });
+
+//IR PARA PAGINA DE TAREFAS/
+function redirecionarPaginaTarefas() {
+  // Redireciona para a página desejada
+  window.location.href = "/tarefas/tarefas.html";
+}

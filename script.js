@@ -4,6 +4,13 @@ function redirecionarParaHome() {
   window.location.href = "/home/home.html";
 }
 
+//TELA SENHA VOLTAR PARA LOGIN/
+function redirecionarLogin() {
+  // Redireciona para a página desejada
+  window.location.href = "/index.html";
+}
+
+
 /////////////// BASE /////////////////
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -43,6 +50,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 window.location.href = '/ajuda/ajuda.html';
         }
 
+                    //IR PARA CONFIGURAÇÕES/
+                    if (opMenu.querySelector('.text-menu').textContent.trim() === 'CONFIGURAÇÕES') {
+                      // Redirect to the home page
+                      window.location.href = '/config/config.html';
+                    }
+        
                     //IR PARA PSICOLOGOS/
         if (opMenu.querySelector('.text-menu').textContent.trim() === 'SAIR') {
           // Redirect to the home page

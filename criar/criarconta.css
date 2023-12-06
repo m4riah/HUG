@@ -1,6 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?família=Inter:wght@400; 500&família=Nunito+Sans:opsz,wght@6.. 12.200&family=Open+Sans:wght@500&family=Poppins:ital,wght@1.200; 1.300&família=Roboto:wght@100; 300&family=Smooch+Sans:wght@100&display=swap');
+html ::-webkit-scrollbar {
+  width: 10px;
+}
 
-
+html ::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #329F92; 
+}
 
 body {
 
@@ -8,7 +13,10 @@ body {
     height: 100vh;
     font-family:'Nunito Sans', sans-serif;;
     background: #ffff;
+    margin: 0;
+    overflow-x: hidden;
 }
+
 #form {
   position: relative;
   top: 2%;
@@ -45,11 +53,10 @@ body {
 .title {
     font-size: 40px;
     min-width: 200px;
-    font-family: 'Nunito', 'Sans-serif';
 }
 
 .input {
-    margin-top: 9px;
+    margin-top: 15px;
     border-radius: 10px;
     height: 20px;
     padding: 10px;
@@ -57,6 +64,7 @@ body {
     outline: 0;
     border: 1px solid #F0E4E4;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
 }
 
 .input input {
@@ -70,8 +78,8 @@ body {
 h1 {
     margin-top: 10px;
     font-size: 30px;
-    font-family: 'Nunito', Sans-serif;
-    color: rgb(59, 54, 54);
+    color: #329F92;
+    font-family: 'Poppins', sans-serif;
 } 
 
 .toggle-container {
@@ -132,6 +140,7 @@ h1 {
     .toggle-label {
         margin-left: 3px; /* Ajuste o valor conforme necessário para alinhar o texto */
         vertical-align: middle;
+        margin-bottom: 5px;
       }
 
       .buttons {
@@ -177,3 +186,7 @@ a {
     width: 40px; /* Largura dos rótulos */
     text-align: right;
   }
+
+.label-data {
+    margin-top: 25px;
+}

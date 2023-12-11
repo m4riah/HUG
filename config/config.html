@@ -99,16 +99,52 @@
             </div>
 
             <div class="link-container">
-                <img src="/images/foto-perfil.png" alt="Imagem de Perfil" class="img-perfil">
-                <a href="#">alterar magem</a>
-            </div>
 
+                <img src="/images/foto-perfil.png" alt="Imagem de Perfil" class="img-perfil" id="imgPerfil">
+                <label for="imagem" id="alterarImagemLabel"></label>
+                <input type="file" id="imagem" name="imagem" accept="image/*" style="display: none;" onchange="exibirImagem(this)">
+                <a href="#" onclick="document.getElementById('imagem').click(); return false;">alterar imagem</a>
+
+            </div>
+            
             <form action="#">
 
+                <div class="form-container">
+                    <label for="">Alterar nome completo</label>
+            <div class="input">
+                <input id="text" class="email" type="text" placeholder="Nome completo">
+            </div>
+              <label for="#" class="Redefinir">Redefinir senha</label>
+                </div>
+
+                <div class="grupo">
+                    <label for="" style="color: #7E8180;" >Acessibilidade</label>
+                    
+                    <div class="link-contraste">
+                        <img src="/images/iconmonstr-contrast-filled-240 1.png" alt="Imagem de Perfil" class="img-perfil">
+                        <p>Contraste</p>
+                        <label for="#" class="label">Assinatura</label>
+                        <!-- Adicionando um botão de assinatura -->
+                        <button class="botao-assinatura" onclick="alert('Assinatura realizada!')">Assinar Sessão</button>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
 
+    <script>
+        function exibirImagem(input) {
+        var imgPerfil = document.getElementById('imgPerfil');
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                imgPerfil.src = e.target.result;
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    </script>
+      
 </body>
 
 </html>

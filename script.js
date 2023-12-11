@@ -138,27 +138,107 @@ function redirecionarParaOutraPagina() {
 
 //////// pop up - alterar sessoes ////////
 
-// script.js
-
-document.addEventListener('DOMContentLoaded', function() {
-  var openPopupBtn = document.getElementById('openPopupBtn');
+document.addEventListener('DOMContentLoaded', function () {
+  var openPopupBtns = document.querySelectorAll('.openPopupBtn');
   var closePopupBtn = document.getElementById('closePopupBtn');
   var popup = document.getElementById('popup');
 
-  openPopupBtn.addEventListener('click', function() {
-      popup.style.display = 'block';
+  openPopupBtns.forEach(function (button) {
+    button.addEventListener('click', function () {
+      exibirPopup();
+    });
   });
 
-  closePopupBtn.addEventListener('click', function() {
+  closePopupBtn.addEventListener('click', function () {
+    popup.style.display = 'none';
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
       popup.style.display = 'none';
+    }
   });
 
-  document.addEventListener('keydown', function(event) {
-      if (event.key === 'Escape') {
-          popup.style.display = 'none';
-      }
+  function exibirPopup() {
+    popup.style.display = 'block';
+  }
+});
+
+
+//////////////// MUDAR HORARIO DINAMICAMENTE /////////////////////////
+
+document.addEventListener('DOMContentLoaded', function () {
+  var openPopupBtns = document.querySelectorAll('.horario-btn');
+  var closePopupBtn = document.getElementById('closePopupBtn');
+  var popup = document.getElementById('popup');
+  var dataAgendamento = document.getElementById('dataAgendamento');
+  var horarioAgendamento = document.getElementById('horarioAgendamento');
+
+  openPopupBtns.forEach(function (button) {
+    button.addEventListener('click', function () {
+      // Obtenha a data e o horário do botão clicado
+      var now = new Date();
+      var data = now.toLocaleDateString();
+      var horario = button.textContent;
+
+      // Atualize o conteúdo do pop-up com as informações dinâmicas
+      dataAgendamento.textContent = 'DATA: ' + data;
+      horarioAgendamento.textContent = 'HORÁRIO: ' + horario;
+
+      // Exiba o pop-up
+      popup.style.display = 'block';
+    });
+  });
+
+  closePopupBtn.addEventListener('click', function () {
+    popup.style.display = 'none';
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      popup.style.display = 'none';
+    }
   });
 });
+
+
+//////////////// SEGUNDO POPUP ///////////////////////
+ 
+  function exibirPopupDeSucesso() {
+    var successPopup = document.getElementById('successPopup');
+    successPopup.style.display = 'block';
+  }
+
+  // Função para fechar o popup atual
+  function fecharPopupAtual() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'none';
+  }
+
+  // Adiciona um ouvinte de evento ao botão de confirmação
+  document.getElementById('confirmPopupBtn').addEventListener('click', function() {
+    // Fecha o popup atual
+    fecharPopupAtual();
+
+    // Exibe o popup de sucesso
+    exibirPopupDeSucesso();
+  });
+
+  // Adiciona um ouvinte de evento ao botão de prosseguir
+  document.getElementById('prosseguirBtn').addEventListener('click', function() {
+    // Aqui você pode adicionar lógica adicional para lidar com o botão "Prosseguir"
+    // Por exemplo, redirecionar para outra página
+    window.location.href = '/sessoes/sessoes.html';
+  });
+
+  // Adiciona um ouvinte de evento ao botão de fechar no popup de sucesso
+  document.getElementById('closeSuccessPopupBtn').addEventListener('click', function() {
+    var successPopup = document.getElementById('successPopup');
+    successPopup.style.display = 'none';
+  });
+
+/////////////////////////////// FORMULARIO ///////////////////////////
+
 
 
 function submitForm() {

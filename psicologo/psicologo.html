@@ -54,19 +54,19 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="#">08:30</a></td>
-            <td><a href="#">08:30</a></td>
-            <td><a href="#">08:30</a></td>
-            <td><a href="#">08:30</a></td>
-            <td><a href="#">08:30</a></td>
+            <td><a href="#" class="openPopupBtn horario-btn">08:30</a></td>
+            <td><a href="#" class="openPopupBtn horario-btn">08:30</a></td>
+            <td><a href="#" class="openPopupBtn horario-btn">08:30</a></td>
+            <td><a href="#" class="openPopupBtn horario-btn">08:30</a></td>
+            <td><a href="#" class="openPopupBtn horario-btn">08:30</a></td>
           </tr>
           <tr>
-            <td><a href="#">09:30</a></td>
-            <td><a href="#">09:30</a></td>
-            <td><a href="#">09:30</a></td>
-            <td><a href="#">09:30</a></td>
-            <td><a href="#">09:30</a></td>
-          </tr>
+            <td><a href="#" class="openPopupBtn horario-btn">09:30</a></td>
+            <td><a href="#" class="openPopupBtn horario-btn">09:30</a></td>
+            <td><a href="#" class="openPopupBtn horario-btn">09:30</a></td>
+            <td><a href="#" class="openPopupBtn horario-btn">09:30</a></td>
+            <td><a href="#" class="openPopupBtn horario-btn">09:30</a></td>
+          </tr>          
           <!-- Adicione mais linhas conforme necessário -->
         </tbody>
       </table>
@@ -86,6 +86,31 @@
 
   <p class="p-contato">Agende seu horário ou entre em contato em caso de dúvidas.</p>
 
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close" id="closePopupBtn">&times;</span>
+      <h2>CONFIRMAR AGENDAMENTO</h2>
+      <p id="dataAgendamento">DATA: 00/00/0000</p>
+      <p id="horarioAgendamento">HORÁRIO: 00:00</p>
+      <div class="op-troca">
+        <a href="/psicologo/psicologo.html" class="botao-cancelar">Cancelar</a>
+        <a href="#" id="confirmPopupBtn" class="botao-trocar">Confirmar</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="popup" id="successPopup">
+    <div class="popup-content">
+      <span class="close" id="closeSuccessPopupBtn">&times;</span>
+      <h2>CONSULTA MARCADA COM SUCESSO!</h2>
+      <div class="op-troca">
+        <a href="/sessoes/sessoes.html" id="prosseguirBtn" class="botao-prosseguir">Prosseguir</a>
+      </div>
+    </div>
+  </div>
+  
+    </div>
+</div>
 
 
 

@@ -1,0 +1,144 @@
+html ::-webkit-scrollbar {
+    width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #329F92; 
+}
+
+body, h1, h2, h3, p, div {
+    margin: 0;
+    padding: 0;
+}
+
+.wireframe {
+    background: linear-gradient(to bottom, #ffffff 50%, #5c9d9d 50%);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu-fixo {
+    width: 330px;
+    height: 1024px;
+    background-color: #8fdfd4;
+    border-top-right-radius: 15px;
+}
+
+.logo1 {
+    width: 177px;
+    height: 52px;
+    padding-top: 50px;
+    padding-left: 80px;
+}
+
+.frase-logo {
+    font-size: 10px;
+    width: 159px;
+    text-align: center;
+    font-family: 'inter';
+    color: #1A816E;
+    padding-top: 10px;
+    padding-left: 80px;
+}
+
+.linha {
+    background-color: #8EC0B9;
+    margin-top: 50px;
+}
+
+
+
+.op-menu-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.op-menu {
+    width: 230px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.icon-menu {
+    margin-right: 10px;
+}
+
+.icon-menu img {
+    max-width: 100%;
+}
+
+.text-menu {
+    color: #FFFFFF;
+    font-family: 'arimo';
+}
+
+.op-menu:hover {
+    background-color: #36C6C6;
+    background-image: url('img/iconmonstr-building-4-240.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.op-menu:hover .text-menu {
+    color: #FFFFFF;
+}
+
+.op-menu.clicked {
+    background-color: #1A816E;
+    transition: background-color 0.5s ease; /* Adjust the duration as needed */
+    
+}
+
+.op-menu.clicked .text-menu {
+    color: #FFFFFF;
+}
+
+.h1-tarefas {
+    color: #329F92;
+    margin-left: 40px;
+    margin-top: 60px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    margin-top: 16px;
+}
+
+
+.task-list label {
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 6px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container-list {
+    padding-top: 10px;
+    margin-left: 40px;
+    top: 40px;
+    background-color: #F5F5F5;
+    width: 840px;
+    height: 400px;
+    position: relative;
+    border: #00000033;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}

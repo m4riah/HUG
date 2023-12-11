@@ -285,6 +285,10 @@ function submitForm() {
     });
 }
 
+ /// EVENTO CLICK PARA PAG LAUDOS //
+function irParaLaudos() {
+  window.location.href = '/laudos/laudos.html';
+}
 
 //EVENTO CLICK PARA PAG HOME (SELEÇÃO DE PSI)/
 function voltarParaHome() {
